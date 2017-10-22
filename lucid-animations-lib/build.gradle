@@ -58,4 +58,53 @@ dependencies {
     provided "org.projectlombok:lombok:$project.lombokVersion"
 }
 
-// TODO : Travis configuration
+project.ext {
+    plugin = 'pt.simdea.lucidanimations'
+    name = 'LucidAnimations'
+    description = 'Android View Animation Library.'
+    groupId = 'pt.simdea'
+    artifactId = 'lucidanimations'
+    version = ""
+    website = 'https://github.com/simdea/LucidAnimations'
+    scm = 'https://github.com/simdea/LucidAnimations'
+    tags = ['android', 'view', 'animation']
+    pom = {
+        licenses {
+            license {
+                name 'The MIT License (MIT)'
+                url 'https://opensource.org/licenses/MIT'
+                distribution 'repo'
+            }
+        }
+        scm {
+            url project.ext.scm
+            connection 'scm:git@github.com:simdea/LucidAnimations.git'
+            developerConnection 'scm:git@github.com:simdea/LucidAnimations.git'
+        }
+        issueManagement {
+            system 'GitHub'
+            url "${project.ext.scm}/issues"
+        }
+        developers {
+            developer {
+                name 'Simdea'
+                url 'https://www.simdea.pt'
+                roles {
+                    role 'developer'
+                }
+            }
+        }
+    }
+}
+
+publish {
+    userOrg = 'simdea'
+    groupId = project.ext.groupId
+    artifactId = project.ext.artifactId
+    publishVersion = project.ext.version
+    repoName = 'LucidAnimations'
+    repository = project.ext.scm
+    issueTracker = "${project.ext.scm}/issues"
+    website = project.ext.website
+    licences = ['MIT']
+}
