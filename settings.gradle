@@ -1,0 +1,1 @@
+include ':lucid-animations-sample', ':lucid-animations-lib'
