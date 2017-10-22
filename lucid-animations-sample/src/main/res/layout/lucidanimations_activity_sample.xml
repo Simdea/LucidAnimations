@@ -6,7 +6,17 @@
         android:id="@+id/tvHello"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="@string/lucidanimations_app_name"/>
+        android:gravity="center|top"
+        android:layout_marginTop="@dimen/lucidanimations_four_zero_dps"
+        android:text="@string/lucidanimations_app_name"
+        android:textSize="@dimen/lucidanimations_text_size_21"/>
+
+    <ImageButton
+        android:id="@+id/ibAnimationTrigger"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lucidanimations_four_zero_dps"
+        android:layout_gravity="center"
+        android:background="@color/lucidAnimationsColorAccent"
+        android:contentDescription="@null"/>
 
 </merge>
