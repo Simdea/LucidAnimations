@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Generic View Dimensions -->
+    <dimen name="lucidanimations_five_dps">5dp</dimen>
+    <dimen name="lucidanimations_four_zero_dps">40dp</dimen>
+    <dimen name="lucidanimations_eight_zero_dps">80dp</dimen>
+    <dimen name="lucidanimations_one_five_zero_dps">150dp</dimen>
+    <dimen name="lucidanimations_two_zero_zero_dps">200dp</dimen>
+
+    <!-- Generic Text Dimensions -->
+    <dimen name="lucidanimations_text_size_16">16sp</dimen>
+    <dimen name="lucidanimations_text_size_21">21sp</dimen>
+</resources>

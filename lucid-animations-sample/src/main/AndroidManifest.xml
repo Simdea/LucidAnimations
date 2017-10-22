@@ -1,0 +1,38 @@
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="pt.simdea.lucidanimations.sample">
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/lucidanimations_ic_launcher"
+        android:label="@string/lucidanimations_app_name"
+        android:roundIcon="@mipmap/lucidanimations_ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/LucidAnimationsAppTheme"
+        tools:node="replace"
+        tools:replace="android:label">
+
+        <!-- Splash Activity -->
+        <activity
+            android:name=".ui.SplashActivity"
+            android:theme="@style/LucidAnimationsSplashTheme">
+            <intent-filter
+                tools:ignore="GoogleAppIndexingWarning">
+                <action
+                    android:name="android.intent.action.MAIN" />
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Demo Activity -->
+        <activity android:name=".ui.SampleActivity" />
+
+    </application>
+
+</manifest>

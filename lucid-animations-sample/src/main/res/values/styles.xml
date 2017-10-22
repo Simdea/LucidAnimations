@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="LucidAnimationsAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/lucidAnimationsColorPrimary</item>
+        <item name="colorPrimaryDark">@color/lucidAnimationsColorPrimaryDark</item>
+        <item name="colorAccent">@color/lucidAnimationsColorAccent</item>
+    </style>
+
+    <!-- Splash Screen theme. -->
+    <style name="LucidAnimationsSplashTheme" parent="LucidAnimationsAppTheme">
+        <item name="android:windowBackground">@drawable/lucidanimations_splash_background</item>
+    </style>
+
+    <!-- Custom No Status Bar theme. -->
+    <style name="LucidAnimationsNoStatusBarTheme" parent="LucidAnimationsAppTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+</resources>
