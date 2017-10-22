@@ -5,8 +5,8 @@
     <TextView
         android:id="@+id/tvHello"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center|top"
+        android:layout_height="@dimen/lucidanimations_four_zero_dps"
+        android:gravity="center"
         android:layout_marginTop="@dimen/lucidanimations_four_zero_dps"
         android:text="@string/lucidanimations_app_name"
         android:textSize="@dimen/lucidanimations_text_size_21"/>
